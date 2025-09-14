@@ -1,12 +1,12 @@
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', () => {
     const hamMenu = document.querySelector('.hamMenu');
     const navLinks = document.querySelector('.nav-links');
     
-    hamMenu.addEventListener('click', function() {
+    hamMenu.addEventListener('click', () => {
         navLinks.classList.toggle('active');
     });
     
-    document.addEventListener('click', function(event) {
+    document.addEventListener('click', (event) => {
         const isClickInsideNav = navLinks.contains(event.target) || hamMenu.contains(event.target);
         if (!isClickInsideNav && navLinks.classList.contains('active')) {
             navLinks.classList.remove('active');
