@@ -102,7 +102,7 @@ nav {
   border-right: .15em solid #ff79c6;
   white-space: nowrap;
   margin: 0 auto;
-  animation: typing 3.5s steps(40, end), blink .75s step-end infinite;
+  animation: blink .75s step-end infinite;
 }
 
 .hero h1 {
