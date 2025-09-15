@@ -97,6 +97,14 @@ nav {
     animation: pop-up 3s;
 }
 
+.typewriter {
+  overflow: hidden;
+  border-right: .15em solid #ff79c6;
+  white-space: nowrap;
+  margin: 0 auto;
+  animation: typing 3.5s steps(40, end), blink .75s step-end infinite;
+}
+
 .hero h1 {
     font-size: 3.5rem;
     margin-bottom: 20px;
@@ -275,6 +283,11 @@ footer {
     100% { opacity: 1;}
 }
 
+@keyframes blink {
+  from, to { border-color: transparent }
+  50% { border-color: #ff79c6; }
+}
+
 @media (max-width: 1000px) {
     .about-content {
         gap: 30px;
@@ -390,5 +403,11 @@ footer {
     
     .logo {
         font-size: 1.5rem;
+    }
+
+    .typewriter {
+        animation: none;
+        border-right: none;
+        white-space: normal;
     }
 }

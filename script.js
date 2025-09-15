@@ -31,4 +31,11 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     });
+
+    const heroTitle = document.querySelector('.hero h1');
+    if (heroTitle && window.innerWidth > 600) {
+        const originalText = heroTitle.textContent;
+        heroTitle.innerHTML = `<span class="typewriter">${originalText}</span>`;
+    }
+
 });
